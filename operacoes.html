@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./operacoes.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Operações com matrizes</h1>
+        <a href="./index.html" class="menu">Menu</a>
+
+        <section class="operationType">
+            <h2>Tipo de operação: </h2>
+            <select name="" id="operator" onchange="changed()">
+                <option value="none">Nenhum</option>
+                <option value="sum">A + B</option>
+                <option value="subtract">A - B</option>
+                <option value="multiplication">A x B</option>
+                <option value="inversa">Inversa</option>
+                <option value="inteiro">Multiplicar por inteiro</option>
+                <option value="transposta">Transposta</option>
+            </select>
+        </section>
+
+        <section class="ordemMatrizesContainer">
+            <div class="ordemMatrizes">
+                <h2>Ordem das matrizes: </h2>
+                <div id="matrizA">
+                    <p class="textCenter">Matriz A: </p> <input type="number" id="qtdLinhasA"> x <input type="number"
+                        id="qtdColunasA">
+
+                </div>
+                <div id="matrizB">
+                    <p class="textCenter">Matriz B: </p> <input type="number" id="qtdLinhasB"> x <input type="number"
+                        id="qtdColunasB">
+
+                </div>
+
+                <div id="inputIntNumber">
+                    <p>Número inteiro: </p> <input type="number" id="inteiro" class="inputIntegerNumber">
+                </div>
+
+                <div class="gerarButton">
+                    <button onclick="gerar()">Gerar</button>
+                    <button onclick="calcular()">Calcular</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="field">
+            <section id="fieldA">
+            </section>
+            <section id="fieldB">
+            </section>
+        </section>
+
+        <section id="resultado">
+            <section id="fieldC">
+            </section>
+        </section>
+    </main>
+
+    <script src="./operacoes.js"></script>
+</body>
+
+</html>

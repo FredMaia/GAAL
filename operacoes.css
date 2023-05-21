@@ -1,0 +1,85 @@
+main {
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#operator {
+    width: 100px;
+}
+
+.operationType {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.ordemMatrizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+#field {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.calcularButton {
+    display: flex;
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+#inputIntNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .ordemMatrizes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #inputIntNumber {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #field {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
